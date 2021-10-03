@@ -28,6 +28,25 @@ li a {
 li a:hover {
   background-color: #111;
 }
+.container{
+    display: flex;
+
+  justify-content: space-around;
+  flex-flow: row wrap;
+  align-items: stretch;
+  
+}
+.img{
+    flex-grow: 1;
+    width: 20px;
+    height: 250px;
+    padding: 5px;
+    
+}
+.explain{
+    margin:auto;
+    width: 70%;
+}
     </style>
 </head>
 <body>
@@ -36,9 +55,20 @@ li a:hover {
             <li><a class="active" href="index.html">Home</a></li>
             <li><a href="project.html">Projects</a></li>
             <li><a href="contact.html">Contact</a></li>
-            <li><a href="final.html">Final Pages</a></li>
+            <li><a href="final.html">Perdy's Pages</a></li>
           </ul>
     </div>
-    <h1>finals</h1>
+    <h1 style="text-align: center;">Perdy's Bio</h1>
+    <div class="container">
+        <img class="img" style="width: 20px;" src="p1.jpg">
+        <img class="img" src="p2.jpg">
+        
+    </div>
+    <div class="explain">
+        <p>My name is Predy, I am 5 years old. My father always says I am a smart girl.
+            I perfer Tuna cat food rather than cat food make by chicken. I born in Auburn,
+            and my father adopt me when I was borned only 2 weeks. I love my father(Qinghang)
+        </p>
+    </div>
 </body>
 </html>
