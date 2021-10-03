@@ -33,7 +33,7 @@
 
         .grid-container {
             display: grid;
-            grid-template-columns: 1fr 4fr;
+            grid-template-columns: 1fr 6fr;
             grid-template-rows: 1fr 3fr 3fr;
             grid-column-gap: 5px;
             
@@ -53,6 +53,7 @@
             grid-row: 2/2;
             grid-column: 2/2;
             
+            
         }
         .project2Title{
             grid-row: 3/3;
@@ -63,16 +64,30 @@
             grid-row: 3/3;
             grid-column: 2/2;
             
+            
         }
         .title:hover{
             transform: rotate(20deg);
         }
-        p{
-            padding-left: 50px;
+        @media only screen and (min-width: 500px) {
+            .title{
+                text-align: center;
+            }
+            .project1Detail{
+                text-align: center;
+            }
+            .project2Detail{
+                text-align: center;
+            }
         }
-        .a{
-            padding-left: 50px;
+        @media only screen and (max-width: 500px) {
+            .title{
+                padding-left: 5px;
+                padding-right: 5px;
+            }
+            
         }
+       
     </style>
 </head>
 
@@ -92,7 +107,7 @@
             <h1 style="text-align: center;">My projects</h1>
         </div>
         <div class="project1Title">
-            <h3 class="title" style="padding-left: 100px;">DaysideLLC</h4>
+            <h3 class="title">DaysideLLC</h4>
 
         </div>
         <div class="project1Detail">
@@ -109,7 +124,7 @@
 
         </div>
         <div class="project2Title">
-            <h3 class="title" style="padding-left: 100px;">Book Landing Application</h4>
+            <h3 class="title" >Book Landing Application</h4>
 
         </div>
         <div class="project2Detail">
